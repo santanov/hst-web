@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HST Solar</title>
+    <meta name="keywords"
+          content="Solar energy, Solar Racking, Solar Mounting, Solar Balance of System, Solar BOS, Low cost Solar Racking, Leading Solar Racking, Design and Engineering, PV Engineering, system design, solar engineering, EPC, solar EPC, tracking, solar tracker, solar project, Solar Energy Services, Solar Mounting Systems, HST, HST Solar, HST Racking, utility scale racking, utility solar, commercial solar, solar leader, Solar, clean energy, optimization solar, machine learning, software solar, solar high IRR, low cost solar, lowest cost solar, go solar,">
+    
+    <meta name="description"
+          content="Increase Solar project returns. Lower cost of Solar energy. HST uses optimization to reduce the cost of solar energy. Our Solar Racking and BOS solutions provide the highest IRR for your projects.">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/full-slider.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Raleway:400,100,200,300' rel='stylesheet'
+          type='text/css'>
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+
+<div class="modal fade modal-fullscreen force-fullscreen" id="myModal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+            </div>
+            <div class="modal-body container">
+                <div class="row modal-test-row">
+                    <div class="col-md-5 col-md-offset-1 modal-test-col1">
+                        <div class="forms">
+                            <div class="form-button-header">
+                                <h1 class="form-font">Members</h1>
+                            </div>
+
+
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control form-font" id="inputEmail"
+                                           placeholder="Email">
+                                </div>
+                                <div class="form-group" id="bottom-form">
+                                    <input type="password" class="form-control form-font" id="inputPassword"
+                                           placeholder="Password">
+                                </div>
+                                <button type="submit" class="form-font btn btn-primary login-mod">Login</button>
+
+
+                            </form>
+
+                            <div class="forgot form-font">
+                                <button type="submit" id="forgot-password">Forgot
+                                    password?
+                                </button>
+                            </div>
+
+                            <div class="form-button-header form-align-center">
+                                <h3 class="form-font">or</h3>
+                            </div>
+
+                            <button type="submit" onclick="window.location.href='signup.html'"
+                                    class="form-font btn btn-primary create-account-mod">Create an
+                                account
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 modal-test-col2">
+                        <div class="form-pills form-font">
+                            <h3><a target="_blank" href="mission.html">Our mission</a></h3>
+
+                            <h3><a target="_blank" href="leadership.html">Team</a></h3>
+
+                            <h3><a target="_blank" href="careers.html">Careers</a></h3>
+
+                            <h3><a target="_blank" href="contact.html">Contact us</a></h3>
+
+                            <h3><a target="_blank" href="tos.html">Terms of service</a></h3>
+
+                            <h3><a target="_blank" href="privacy.html">Privacy policy</a></h3>
+                        </div>
+
+                        <ul class="social-list">
+
+                            <li class="social">
+                                <a class="btn btn-social-icon btn-linkedin"
+                                   target="_blank" href="https://www.linkedin.com/company/hst-solar">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+
+                            <li class="social">
+                                <a class="btn btn-social-icon btn-twitter" target="_blank" href="">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<header class="global-header js-global-header">
+
+
+    <div class="pull-left">
+        <a href="#" class="menu nav-text" data-toggle="modal" data-target="#myModal">
+            <span><img id="menu-pic" src="pictures/Picture3.png"></span>
+            Menu
+        </a>
+    </div>
+
+    <p class="pull-right actions ">
+
+        <a class="nav-text" data-toggle="modal" data-target="#myModal" href="#">
+            Log In
+        </a>
+
+
+        <a class="nav-text" href="signup.html">
+            Sign Up
+        </a>
+
+    </p>
+
+    <div class="yui3-u-1-3 center block-center">
+        <a id="icon-name" class="nav-text" href="#header">H S T</a>
+    </div>
+
+</header>
+
+
+<div class="header" id="header">
+
+    <div class="text-vertical-center scroll-container">
+
+        <h3 class="shimmer" id="header-text">We are a next generation <span class="highlight">energy</span>
+            company</h3>
+
+        <div class="scroll">
+            <a id="header-down" href="#section1"><img class="scroll-down" src="pictures/arrow-down.png"></a>
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="horizontal">
+    <div class="table">
+        <section id="section1">
+            <div class="slideshow comb" id="comb">
+
+                <div class="caption oval">
+                    <h3 class="white-text">Proven results of <br> software across all <br> geographies</h3>
+                </div>
+
+                <div class="comb-bottom text-vertical-bottom">
+                    <h1 class="white-text">A powerful platform for solar PV design</h1>
+                    <br>
+
+                    <h3 class="white-text">This is PV <i>redefined</i></h3>
+
+                </div>
+
+                <div id="test" class="vertical-align">
+                    <div class="arrow-right">
+                        <a id="1-right" href="#section2"><img class="scroll-down" src="pictures/arrow-right.png"></a>
+                    </div>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-left">
+                        <a id="1-left" href="#section5"><img class="scroll-down" src="pictures/arrow-left.png"></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="slideshow tilt" id="tilt">
+
+                <div class="tilt-top text-vertical-bottom">
+                    <h1 class="white-text">Uncovering Hidden Efficiencies </h1>
+                    <br>
+
+                    <h3 class="white-text"> Higher Energy Harvest, Lower Costs.<br>
+                        Customized to every site
+                    </h3>
+                </div>
+
+                <div class="oval tilt-bottom">
+                    <h3 class="white-text">Lava bed detected in geotech. <br> <i>Choose ballasted</i></h3>
+                </div>
+
+                <div class="oval tilt-middle">
+                    <h3 class="white-text">Optimized wall thickness: 0.083'' <br> Reduced Panel Clearance: 16.3''</h3>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-right">
+                        <a id="2-right" href="#section3"><img class="scroll-down" src="pictures/arrow-right.png"></a>
+                    </div>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-left">
+                        <a id="2-left" href="#section1"><img class="scroll-down" src="pictures/arrow-left.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="section3">
+            <div class="slideshow chart" id="chart">
+
+                <div class="chart-bottom text-vertical-bottom">
+                    <h1 class="white-text">Delivering Highest Investment Returns</h1> <br>
+
+                    <h3 class="white-text">Powered by Optimization & Data analysis</h3>
+                </div>
+
+                <div class="chart-middle-left">
+                    <div class="oval chart-middle-left-inside">
+                        <h3 class="white-text">Global maximum <br> IRR</h3>
+                    </div>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-right">
+                        <a id="3-right" href="#section4"><img class="scroll-down" src="pictures/arrow-right.png"></a>
+                    </div>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-left">
+                        <a id="3-left" href="#section2"><img class="scroll-down" src="pictures/arrow-left.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="section4">
+
+            <div class="slideshow exceldoc" id="exceldoc">
+
+                <div class="text-vertical-center">
+                    <h1 class="white-text">Supporting your end to end permitting needs</h1> <br>
+
+                    <h3 class="white-text">Wet stamping services for all states
+                    </h3>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-right">
+                        <a id="4-right" href="#section5"><img class="scroll-down" src="pictures/arrow-right.png"></a>
+                    </div>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-left">
+                        <a id="4-left" href="#section3"><img class="scroll-down" src="pictures/arrow-left.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section5">
+            <div class="slideshow staircase" id="staircase">
+
+                <div class="case-top text-vertical-top">
+                    <h1 class="white-text">World class PV Engineering</h1> <br>
+
+                    <h3 class="white-text">UL2703 Listed Systems, PE Stamped, 20 Year Insured Warranty
+                    </h3>
+                </div>
+
+                <div class="oval stair-middle"><img id="staircaseSide" src="pictures/staircaseSide.png"></div>
+                <div class="oval stair-middle-right">
+                    <h3 class="white-text">Bankable kWh <br> PVSyst Figures</h3>
+                </div>
+
+                <div class="stair-bottom-right">
+                    <h3 class="white-text this">ASCE & IBC & Local Codes <br> ASTM Standards <br>Certified by TUV
+                        Rheinland</h3>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-left">
+                        <a id="5-left" href="#section4"><img class="scroll-down" src="pictures/arrow-left.png"></a>
+                    </div>
+                </div>
+
+                <div class="vertical-align">
+                    <div class="arrow-right">
+                        <a id="5-right" href="#section1"><img class="scroll-down" src="pictures/arrow-right.png"></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Repeat this part as necessary. -->
+
+    </div>
+
+
+</div>
+
+<div class="button-html">
+    <div class="container button-page">
+        <div class="row button-header-helper">
+            <div class="col-md-12 text-vertical-center button-header">
+
+                <h1 class="white-text">The HST Platform</h1>
+                <br>
+
+                <h3 class="white-text">Engineer financially superior solar projects</h3>
+            </div>
+        </div>
+        <div class="row button-row" id="top-row">
+            <div class="col-md-4 col-sm-6 col-xs-12  test">
+                <div class="button-container">
+                    <div class="button-inside">
+                        <h3 class="white-text">
+                            Designed in <br> America
+                        </h3>
+                        <img class="button-icon" src="pictures/red.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12  test">
+                <div class="button-container">
+                    <div class="button-inside">
+                        <h3 class="white-text">
+                            Multi<br>
+                            dimensional Optimization
+                        </h3>
+                        <img class="button-icon" src="pictures/red.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12  test">
+                <div class="button-container">
+                    <div class="button-inside">
+                        <h3 class="white-text">
+                            Smart financial returns
+                        </h3>
+                        <img class="button-icon" src="pictures/red.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row button-row">
+            <div class="col-md-4 col-sm-6 col-xs-12  test">
+                <div class="button-container">
+                    <div class="button-inside">
+                        <h3 class="white-text">
+                            Unique customization
+                        </h3>
+                        <img class="button-icon" src="pictures/red.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 test">
+                <div class="button-container">
+                    <div class="button-inside">
+                        <h3 class="white-text">
+                            Equipment <br> agnostic <br> platform
+                        </h3>
+                        <img class="button-icon" src="pictures/red.png">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12 test">
+                <div class="button-container">
+                    <div class="button-inside">
+                        <h3 class="white-text">
+                            Unmatched <br> flexibility
+                        </h3>
+                        <img class="button-icon" src="pictures/red.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="myCarousel" class="slideshow carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for Slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <!-- Set the first background image using inline CSS below. -->
+            <div class="fill" style="background-image:url('pictures/slide2-1.png'); background-size: cover;"></div>
+            <div class="carousel-caption">
+                <h3>Our products</h3>
+
+                <h1>Pre-assembled pile driven</h1>
+
+                <h3>Modular design - Screw or pile driven foundations</h3>
+            </div>
+        </div>
+        <div class="item">
+            <!-- Set the second background image using inline CSS below. -->
+            <div class="fill" style="background-image:url('pictures/slide2-2.png');background-size: cover"></div>
+            <div class="carousel-caption">
+                <h3>Our products</h3>
+
+                <h1>Scalable ballasted</h1>
+
+                <h3>Installed disruptively quickly</h3>
+            </div>
+        </div>
+        <div class="item">
+            <!-- Set the third background image using inline CSS below. -->
+            <div class="fill" style="background-image:url('pictures/slide2-3.png');background-size: cover"></div>
+            <div class="carousel-caption">
+                <h3>Our products</h3>
+
+                <h1>High-return tracking</h1>
+
+                <h3>Tracking for high yield applications</h3>
+            </div>
+        </div>
+        <div class="item">
+            <!-- Set the third background image using inline CSS below. -->
+            <div class="fill" style="background-image:url('pictures/slide2-4.png');background-size: cover"></div>
+            <div class="carousel-caption">
+                <h3>Our products</h3>
+
+                <h1>Other racking manufacturers</h1>
+
+                <h3>HST system design - External racking brands</h3>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="slideshow">
+    <div id="second-carousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#second-carousel" data-slide-to="0" class="active modifier">
+
+            </li>
+            <li data-target="#second-carousel" data-slide-to="1" class="modifier"></li>
+            <li data-target="#second-carousel" data-slide-to="2" class="modifier"></li>
+            <li data-target="#second-carousel" data-slide-to="3" class="modifier"></li>
+            <li data-target="#second-carousel" data-slide-to="4" class="modifier"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('pictures/slide3-1.png'); background-size: cover;"></div>
+                <div class="carousel-caption">
+                    <h3>Our services</h3>
+
+                    <h1>Turnkey Services Across Phases
+                    </h1>
+
+                    <h3>From Feasibility to Construction
+                    </h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('pictures/slide3-2.png');background-size: cover"></div>
+                <div class="carousel-caption">
+                    <h3>Our services</h3>
+
+                    <h1>Turnkey Services Across Phases
+                    </h1>
+
+                    <h3>Integrated Design Platform
+                    </h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('pictures/slide3-3.png');background-size: cover"></div>
+                <div class="carousel-caption">
+                    <h3>Our services</h3>
+
+                    <h1>Turnkey Services Across Phases
+                    </h1>
+
+                    <h3>Comprehensive Package for your Permitting needs
+                    </h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('pictures/slide3-4.png');background-size: cover"></div>
+                <div class="carousel-caption">
+                    <h3>Our services</h3>
+
+                    <h1>Turnkey Services Across Phases
+                    </h1>
+
+                    <h3>Procurement Tailored to Your Needs
+                    </h3>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('pictures/slide3-5.png');background-size: cover"></div>
+                <div class="carousel-caption">
+                    <h3>Our services</h3>
+
+                    <h1>Turnkey Services Across Phases
+                    </h1>
+
+                    <h3>Construction Documents to Build Management
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-md-12">
+                <ul class="social-list1 quicklinks">
+                    <li class="social1"><a target="_blank" href="mission.html">Our mission</a>
+                    </li>
+                    <li class="social1"><a target="_blank" href="leadership.html">Team</a>
+                    </li>
+                    <li class="social1"><a target="_blank" href="careers.html">Careers</a>
+                    </li>
+                    <li class="social1"><a target="_blank" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="social1"><a target="_blank" href="privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="social1"><a target="_blank" href="tos.html">Terms of Service</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+
+
+</html>

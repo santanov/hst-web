@@ -1,0 +1,43 @@
+body {
+    background-color: #ffffff;
+    background-image: url("../pictures/form.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.global-header {
+    background-color: #000000 !important;
+    opacity: 0.7 !important;
+}
+
+.signup-row {
+    margin-top: 15%;
+}
+
+.signup-form {
+    background-color: #ffffff;
+    padding: 30px 60px;
+    border-radius: 30px;
+    margin-bottom: 5%;
+}
+
+form {
+    font-family: "Quicksand";
+}
+
+.signup-heading {
+    font-family: "Quicksand";
+    font-size: 30px;
+}
+
+.signup-intro {
+    font-family: "Quicksand";
+    font-size: 15px;
+    margin: 40px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My AngularJS App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-social.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/full-slider.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/signup.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400|Raleway:400,100,200,300' rel='stylesheet'
+          type='text/css'>
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+<header class="global-header js-global-header">
+
+    <div class="yui3-u-1-3 center block-center">
+        <a id="icon-name" class="nav-text" href="#header">H S T</a>
+    </div>
+
+</header>
+
+
+<div class="container">
+    <div class="row signup-row">
+        <div class="col-md-10 col-md-offset-1 signup-form">
+
+            <h3 class="signup-heading">Request an invitation</h3>
+
+            <div class="signup-intro">HST Solar is a leading provider of solar engineering solutions. HST Inside is an
+                exclusive portal for our customers and partners to design, optimize and manage solar power projects.
+
+                <br><br>
+
+                You have flexibility across all solar PV module and inverter technologies, brands and models.
+                <br><br>
+
+                To request access, please fill out the following information.
+
+            </div>
+
+            <form action="#" method="post">
+                <div class="form-group col-md-6">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="company-name">Company name</label>
+                    <input type="text" class="form-control" id="company-name" placeholder="Enter company name">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label>Are you in the solar industry?</label><br>
+                    <label class="checkbox-inline"><input type="checkbox" value="yes">Yes</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="no">No</label>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="solarCompany">If yes, then what type of company?</label>
+                    <select class="form-control" id="solarCompany">
+                        <option>Not in the solar industry</option>
+                        <option>Solar developer</option>
+                        <option>EPC</option>
+                        <option>Panel manufacturer</option>
+                        <option>Inverter manufacturer</option>
+                        <option>Finance</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="notsolarCompany">If no, then what type of company?</label>
+                    <select class="form-control" id="notsolarCompany">
+                        <option>In the solar industry</option>
+                        <option>Corporation</option>
+                        <option>Government</option>
+                        <option>Non-profit</option>
+                        <option>Utility</option>
+                        <option>Finance</option>
+                    </select>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="emailAddress">Email address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="Enter email address">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="language">Preferred language</label>
+                    <input type="text" class="form-control" id="language" placeholder="Enter preferred language">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="phone">Phone number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="companyAddress">Company address</label>
+                    <input type="text" class="form-control" id="companyAddress" placeholder="Enter street address">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" id="city" placeholder="Enter city">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" id="state" placeholder="Enter state">
+                </div>
+
+                <div class="form-group col-md-4">
+                    <input type="text" class="form-control" id="zipcode" placeholder="Enter zipcode">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="companyEmployees">How many employees do you have?
+                    </label>
+                    <input type="text" class="form-control" id="companyEmployees">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="years-business">How long have you been in business?
+                    </label>
+                    <input type="text" class="form-control" id="years-business">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="find">How did you find us?</label>
+                    <input type="text" class="form-control" id="find">
+                </div>
+                <div class="form-group col-md-2">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+
+
+</html>

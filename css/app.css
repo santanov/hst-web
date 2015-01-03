@@ -1,0 +1,961 @@
+/*
+8 hrs - monday night
+*/
+
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #000000;
+
+}
+
+
+/*
+shimmer effect
+*/
+
+.shimmer {
+    color: rgba(255, 255, 255, 0.5);
+    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+    background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+    background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 125px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #222222;
+}
+
+@-moz-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+
+@-o-keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
+}
+
+/*links*/
+
+.nav-text:link {
+    font-size: 20px;
+    font-family: "Quicksand";
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-text:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-text:hover {
+    text-decoration: none;
+    color: red;
+    transition: all .2s ease-in-out;
+}
+
+.nav-text:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* end links */
+
+/* start header */
+
+.yui3-u-1-3 {
+    width: 33.33333%;
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+}
+
+.block-center {
+    margin: 0 auto;
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+#icon-name {
+    font-size: 40px;
+    font-family: "Quicksand";
+}
+
+.pull-left {
+    float: left
+}
+
+.pull-right {
+    float: right
+}
+
+.global-header {
+    width: 100%;
+    padding: 38px 20px 20px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    line-height: 10px;
+    color: #fff;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.global-header p {
+    line-height: 10px
+}
+
+.global-header a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.global-header .menu {
+    position: relative
+}
+
+#menu-pic {
+    position: relative;
+    padding-left: 30px;
+    bottom: 1px;
+    height: 30px;
+    width: auto;
+}
+
+.global-header .menu .menu-text {
+    padding-left: 10px
+}
+
+.global-header .menu .icon-menu {
+    display: inline-block;
+    padding: 25px 70px 25px 10px;
+    position: absolute;
+    top: -22px;
+    font-size: 18px;
+    line-height: 9px
+}
+
+.global-header .uber-logo {
+    position: relative;
+    top: -9px;
+    text-align: center
+}
+
+.global-header .actions {
+    text-align: right
+}
+
+.global-header .actions a {
+    padding: 5px 12px
+}
+
+/* end nav bar */
+
+/*start landing page*/
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, silver, #222222);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#header-text {
+    font-size: 35px;
+}
+
+.text-vertical-left-top {
+    position: relative;
+    display: table-cell;
+    top: 20%;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-vertical-left-top h1 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.vertical-align {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text-vertical-top {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.text-vertical-top h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
+.text-vertical-top h3 {
+    color: #ffffff;
+    font-family: 'Quicksand';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.text-vertical-bottom {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.text-vertical-bottom h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
+.text-vertical-bottom h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-family: 'Quicksand';
+    font-weight: 300;
+}
+
+.text-vertical-center h3 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Quicksand';
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.text-vertical-center h3.white-text {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+
+.highlight {
+    font-family: "Quicksand";
+    font-size: 35px;
+    color: #D00000;
+}
+
+.scroll-container {
+    position: relative;
+}
+
+.scroll {
+    width: 100%;
+    bottom: 5%;
+    position:absolute;
+}
+
+.scroll-down {
+    width: 70px;
+}
+
+/*end landing page*/
+
+.oval {
+    /*
+        background-color: #285e8e;
+    */
+    background-color: #2a6496;
+    opacity: 0.8;
+    padding: 20px;
+    border: 1px;
+    border-radius: 50px;
+}
+
+.oval h3 {
+    font-family: 'Quicksand';
+    font-weight: 100;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.text-red {
+    color: red;
+}
+
+.white-text {
+    color: #ffffff;
+    font-family: "Quicksand";
+    font-weight: 100;
+    margin: 0;
+}
+
+.black-text {
+    color: #000000;
+    font-family: "Quicksand";
+    font-weight: 100;
+
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    background-color: #000000;
+}
+
+.comb {
+    background-image: url("../pictures/combs.png");
+    background-size: contain;
+    display: table;
+}
+
+.caption {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.comb-bottom {
+    position: absolute;
+    bottom: 15%;
+}
+
+.tilt {
+    background-image: url("../pictures/tilts.png");
+    background-size: cover;
+    position: relative;
+    display: table;
+}
+
+.tilt-top {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 17%;
+}
+
+.tilt-bottom {
+    position: absolute;
+    width: 30%;
+    bottom: 5%;
+    left: 10%;
+    text-align: center;
+}
+
+.tilt-middle {
+    position: absolute;
+    width: 28%;
+    top: 40%;
+    left: 26.5%;
+    text-align: center;
+}
+
+.chart {
+    background-image: url("../pictures/charts.png");
+    background-size: 100% 100%;
+    display: table;
+}
+
+.chart-bottom {
+    position: absolute;
+    bottom: 15%;
+}
+
+.chart-middle-left {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.chart-middle-left-inside {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    text-align: center;
+}
+
+.exceldoc {
+    background-image: url("../pictures/exceldoc.png");
+    background-size: contain;
+    display: table;
+}
+
+.doc-bottom {
+    position: absolute;
+    bottom: 15%;
+}
+
+.staircase {
+    background-image: url("../pictures/staircase.png");
+    background-size: cover;
+    display: table;
+}
+
+.case-top {
+    top: 15%;
+    position: absolute;
+}
+
+.stair-middle {
+    width: 20%;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    text-align: center;
+}
+
+#staircaseSide {
+    width: 95%;
+}
+
+.stair-middle-right {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+.stair-bottom-right {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.stair-bottom-right .this {
+    text-align: left;
+}
+
+/*slide bar*/
+ul {
+    margin: 0 auto;
+    list-style: none;
+    width: 400px;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 10px;
+}
+
+.bubble {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #2a6496;
+    margin: 10px;
+}
+
+
+
+.slides {
+    height: 100%;
+    width: 100%;
+    background-color: #269abc;
+    z-index: 0;
+}
+
+div.horizontal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: static;
+}
+
+.table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.table > section {
+    width: 1600px;
+    height : 100%;
+    display: table-cell;
+    background: #e3e3e3;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 5%;
+}
+
+.arrow-right {
+    position: absolute;
+    right: 5%;
+}
+
+
+.button-html {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.button-header {
+    padding-top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.button-header-helper {
+    width: 100%;
+}
+
+.button-container {
+    background-image: url("../pictures/button-container.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+
+
+.test {
+    height: 100%;
+    padding: 0;
+}
+
+.button-page {
+    height: 100%;
+}
+
+.button-row {
+    height: 33%
+}
+
+.button-inside {
+    height: 70%;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+
+}
+
+.button-icon {
+    width: 70px;
+    position: absolute;
+    bottom: 10px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+
+
+.button-inside h3 {
+    font-size: 20px;
+    font-style: normal;
+}
+
+
+#top-row {
+    margin-top: 60px;
+
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+}
+
+.carousel-caption h3 {
+    font-size: 25px;
+    font-family: "Quicksand";
+    font-weight: 100;
+}
+
+.carousel-caption h1 {
+    font-size: 50px;
+    font-family: "Quicksand";
+    font-weight: 100;
+}
+
+
+/* modal form input
+menu screen */
+
+.modal.modal-fullscreen {
+    /* Maximize the main wrappers on the screen */
+    /* Make the parent wrapper of the modal box a full-width block */
+    /* Remove borders and effects on the content */
+    /**
+       * /!\ By using this feature, you force the header and footer to be placed
+       * in an absolute position. You must handle by yourself the margin of the
+       * content.
+       */
+}
+.modal.modal-fullscreen .modal-dialog,
+.modal.modal-fullscreen .modal-content {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.modal.modal-fullscreen .modal-dialog {
+    margin: 0;
+    width: 100%;
+}
+.modal.modal-fullscreen .modal-content {
+    border: none;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: inherit;
+    -moz-box-shadow: inherit;
+    -o-box-shadow: inherit;
+    box-shadow: inherit;
+}
+.modal.modal-fullscreen.force-fullscreen {
+    /* Remove the padding inside the body */
+}
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+    padding: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header,
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header {
+    top: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+    bottom: 0;
+}
+
+.modal-body {
+    height: 100%;
+}
+
+.modal-test-col1 {
+    height: 60%;
+    display: table;
+    vertical-align: middle;
+    position: relative;
+    top: 15%;
+    border-right: 1px solid;
+    border-color: #101010;
+    padding-right: 100px;
+}
+.modal-test-col2 {
+    height: 60%;
+    display: table;
+    vertical-align: middle;
+    position: relative;
+    top: 15%;
+    padding-left: 100px;
+    padding-right: 40px;
+}
+
+
+
+.modal-test-row {
+    height: 100%;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.login-mod {
+    width: 100%;
+    border-radius: 0;
+    border-color: #a94442;
+    background-color: #a94442;
+    height: 50px;
+    font-size: 20px;
+}
+
+.login-mod:link {
+    width: 100%;
+    border-radius: 0;
+    border-color: #a94442;
+    background-color: #a94442;
+}
+
+.login-mod:visited {
+    width: 100%;
+    border-radius: 0;
+    border-color: #a94442;
+    background-color: #a94442;
+}
+
+.login-mod:hover {
+    width: 100%;
+    border-radius: 0;
+    border-color: #843534;
+    background-color: #843534;
+}
+
+.login-mod:active {
+    width: 100%;
+    border-radius: 0;
+    border-color: #a94442;
+    background-color: #a94442;
+}
+
+#forgot-password {
+    font-size: 12px;
+    color: #222222;
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-style: italic;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.forgot {
+    width: 100%;
+    text-align: right;
+}
+
+.form-font {
+    font-family: "Quicksand";
+}
+
+.form-font h3{
+    font-family: "Quicksand";
+}
+
+.form-font h3 a{
+     text-decoration: none;
+     color: #101010;
+}
+
+.form-font h3 a:hover{
+    text-decoration: none;
+    color: #737373;
+}
+
+.form-group {
+    margin: 0;
+}
+
+#bottom-form {
+    margin-bottom: 20px;
+}
+
+.form-button-header{
+    margin-bottom: 20px;
+}
+
+.form-align-center {
+    text-align: center;
+}
+
+.create-account-mod {
+    margin-top: 20px;
+    border-radius: 0;
+    border-color: gray;
+    background-color: transparent;
+    width: 100%;
+    color: #101010;
+    height: 50px;
+    font-size: 20px;
+}
+
+.create-account-mod:hover {
+    border-color: #101010;
+    background-color: transparent;
+    color: #101010;
+}
+
+.social-list {
+    position: relative;
+    top: 30px;
+    display: inline;
+}
+
+.social {
+    float: left;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+.modal-content {
+    background-image: url("../pictures/form.png");
+    background-size:  cover;
+    background-position: bottom;
+}
+
+
+/*footer*/
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    text-align: center;
+}
+
+footer span.copyright {
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 40px;
+}
+
+.social-centered {
+    text-align: center;
+}
+
+.social-list1 {
+    list-style: none;
+    width: 100%;
+    position: relative;
+    right: 0;
+}
+
+.social1 {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Quicksand";
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.social1 a{
+
+    color: #ffffff;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+    .scroll-down {
+        width: 40px;
+    }
+
+    .oval h3 {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-family: "Quicksand";
+        font-weight: 100;
+    }
+
+
+    .button-inside h3 {
+        font-size: 15px;
+    }
+    .button-icon {
+        width: 50px;
+    }
+
+}
+
+
